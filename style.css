@@ -1,42 +1,84 @@
 /* 
 ---- CORES ----
-    azul: #083DFC
-    laranja: #FF6839
-    cinza: #EBDEDE
+    azul: #083DFC;
+    laranja: #FF6839;
+    cinza: #EBDEDE;
 
  ---- FONTES ----
     paragrafos: Karla, 25pt, Bold (700)
     titulos: Poppins
 
-    */
-
+*/
 
 * {
-    background-color: #083DFC;
+    margin: 0 0 0 0;
 }
 
-/* classes para textos */
+/* -------------------------------------------------
+
+/* TEXTOS */
 .paragraph {
     color: white;
     font-family: 'Karla', sans-serif;
     font-weight: 700;
-    font-size: 25pt;
-    line-height: 120%;
-    width: 500px;
+    font-size: 20pt;
+    line-height: 130%;
 }
 
 .h1 {
-    
+
 }
 
-.column {
+.h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 42pt;
+    line-height: 120%;
+    opacity: 0.3;
+}
+
+.h3 {
+
+}
+
+/* -------------------------------------------------
+
+/* COLUNAS */
+.left-column, .right-column {
     float: left;
-    width: 33.33%;
+    width: 30%;
 }
 
-/* remove floats depois das colunas */
-.row:after {
+.center-column {
+    float: left;
+    width: 40%;
+    margin-top: 10%;
+}
+
+.row {
+    background-color: #083DFC;
+}
+
+.row:after { /* remove floats depois das colunas */
     content: "";
     display: table;
     clear: both;
+}
+
+/* -------------------------------------------------
+
+/* RETANGULOS LARANJA */
+
+.retangulo {
+    width: 100px;
+    height: 100%;
+    background: #FF6839;
+    -webkit-transition: width 6s; 
+    transition: width 2s;
+}
+
+.retangulo:hover {
+    width: 1200px;
+    cursor: pointer;
 }
