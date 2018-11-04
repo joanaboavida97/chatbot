@@ -57,7 +57,7 @@
 }
 
 .row {
-    background-color: #083DFC;
+    background-color: #032EC8;
 }
 
 .row:after { /* remove floats depois das colunas */
@@ -76,9 +76,21 @@
     background: #FF6839;
     -webkit-transition: width 6s; 
     transition: width 2s;
+    
 }
 
 .retangulo:hover {
-    width: 1200px;
+    width: 1400px;
     cursor: pointer;
+    content: "97%";
+}
+
+.shape1{
+    position: absolute;
+    background: red;
+    top: 512px;
+    width: 180px;
+    height: 140px;
+    transition: .2s ease; /* move this here from :hover */
+    transition: height .2s ease, background-color .5s linear;
 }
