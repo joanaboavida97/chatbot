@@ -1,7 +1,7 @@
 /* 
 ---- CORES ----
-    azul: #083DFC;
-    laranja: #FF6839;
+    verde: #31B18D;
+    vermelho: #CF2B42;
     cinza: #EBDEDE;
 
  ---- FONTES ----
@@ -21,7 +21,7 @@
     color: white;
     font-family: 'Karla', sans-serif;
     font-weight: 700;
-    font-size: 20pt;
+    font-size: 25pt;
     line-height: 130%;
 }
 
@@ -53,11 +53,11 @@
 .center-column {
     float: left;
     width: 40%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .row {
-    background-color: #032EC8;
+    background-color: #31B18D;
 }
 
 .row:after { /* remove floats depois das colunas */
@@ -68,21 +68,31 @@
 
 /* -------------------------------------------------
 
-/* RETANGULOS LARANJA */
+/* RETANGULOS VERMELHOS */
 
-.retangulo {
+.pergunta1, .pergunta2 {
     width: 100px;
     height: 100%;
-    background: #FF6839;
+    background: #CF2B42;
     -webkit-transition: width 6s; 
-    transition: width 2s;
+    transition: width 3s;
     
 }
 
-.retangulo:hover {
+.pergunta1:hover {
     width: 1400px;
     cursor: pointer;
     content: "97%";
 }
+
+.pergunta2:hover {
+    width: 1150px;
+    cursor: pointer;
+    content: "85%";
+    display: block;
+}
+
+
+
 
 
