@@ -3,6 +3,7 @@
     verde: #31B18D;
     vermelho: #CF2B42;
     cinza: #EBDEDE;
+    lettering: #0E1528;
 
  ---- FONTES ----
     paragrafos: Karla, 25pt, Bold (700)
@@ -12,6 +13,14 @@
 
 * {
     margin: 0 0 0 0;
+}
+
+html {
+    width: 100vw;
+}
+
+body {
+    background-color: #31B18D;
 }
 
 /* -------------------------------------------------
@@ -56,10 +65,6 @@
     margin-top: 10%;
 }
 
-.row {
-    background-color: #31B18D;
-}
-
 .row:after { /* remove floats depois das colunas */
     content: "";
     display: table;
@@ -71,7 +76,7 @@
 /* RETANGULOS VERMELHOS */
 
 .pergunta1, .pergunta2 {
-    width: 100px;
+    width: 73px;
     height: 100%;
     background: #CF2B42;
     -webkit-transition: width 6s; 
@@ -82,15 +87,139 @@
 .pergunta1:hover {
     width: 1400px;
     cursor: pointer;
-    content: "97%";
 }
 
 .pergunta2:hover {
-    width: 1150px;
+    width: 85%;
     cursor: pointer;
-    content: "85%";
     display: block;
 }
+
+.global-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*grelha de percentagem*/
+.ruler {
+    background-color: #0E1528;
+    position: relative;
+    width: 100vw;
+    height: 20px;
+   }
+   .ruler .cm,
+   .ruler .mm {
+    position: absolute;
+    border-left: 1px solid white;
+    height: 20px;
+    width: 10%;
+   }
+   .ruler .cm:after {
+    position: absolute;
+    bottom: -15px;
+    font-family: 'Karla', sans-serif;
+    font-size: 9pt;
+    color: white;
+   }
+   .ruler .mm {
+    height: 0px;
+   }
+   .ruler .mm:nth-of-type(5) {
+    height: 7px;
+   }
+   .ruler .cm:nth-of-type(1) {
+    left: 0%;
+   }
+   .ruler .cm:nth-of-type(1):after {
+    content: "0%";
+   }
+   .ruler .cm:nth-of-type(2) {
+    left: 10%;
+   }
+   .ruler .cm:nth-of-type(2):after {
+    content: "10%";
+   }
+   .ruler .cm:nth-of-type(3) {
+    left: 20%;
+   }
+   .ruler .cm:nth-of-type(3):after {
+    content: "20%";
+   }
+   .ruler .cm:nth-of-type(4) {
+    left: 30%;
+   }
+   .ruler .cm:nth-of-type(4):after {
+    content: "30%";
+   }
+   .ruler .cm:nth-of-type(5) {
+    left: 40%;
+   }
+   .ruler .cm:nth-of-type(5):after {
+    content: "40%";
+   }
+   .ruler .cm:nth-of-type(6) {
+    left: 50%;
+   }
+   .ruler .cm:nth-of-type(6):after {
+    content: "50%";
+   }
+   .ruler .cm:nth-of-type(7) {
+    left: 60%;
+   }
+   .ruler .cm:nth-of-type(7):after {
+    content: "60%";
+   }
+   .ruler .cm:nth-of-type(8) {
+    left: 70%;
+   }
+   .ruler .cm:nth-of-type(8):after {
+    content: "70%";
+   }
+   .ruler .cm:nth-of-type(9) {
+    left: 80%;
+   }
+   .ruler .cm:nth-of-type(9):after {
+    content: "80%";
+   }
+   .ruler .cm:nth-of-type(10) {
+    left: 90%;
+   }
+   .ruler .cm:nth-of-type(10):after {
+    content: "90%";
+   }
+   .ruler .cm:nth-of-type(11) {
+    left: 100%;
+   }
+   .ruler .cm:nth-of-type(11):after {
+    content: "100%";
+   }
+   .ruler .mm:nth-of-type(1) {
+    left: 10%;
+   }
+   .ruler .mm:nth-of-type(2) {
+    left: 20%;
+   }
+   .ruler .mm:nth-of-type(3) {
+    left: 30%;
+   }
+   .ruler .mm:nth-of-type(4) {
+    left: 40%;
+   }
+   .ruler .mm:nth-of-type(5) {
+    left: 50%;
+   }
+   .ruler .mm:nth-of-type(6) {
+    left: 60%;
+   }
+   .ruler .mm:nth-of-type(7) {
+    left: 70%;
+   }
+   .ruler .mm:nth-of-type(8) {
+    left: 80%;
+   }
+   .ruler .mm:nth-of-type(9) {
+    left: 90%;
+   }
 
 
 
