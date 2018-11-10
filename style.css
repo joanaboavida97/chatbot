@@ -75,9 +75,6 @@ body {
     font-weight: 600;
     text-align: center;
     margin-top: 20px;
-    border: 3px solid #CF2B42;
-    padding: 10px;
-    width: 200px;
 }
 
 /* -------------------------------------------------
@@ -113,7 +110,7 @@ body {
     height: 100%;
     background: #CF2B42;
     -webkit-transition: width 3s; 
-    transition: width 5s; 
+    transition: width 3s; 
 }
 
 .pergunta1:hover {
@@ -290,8 +287,8 @@ body {
 .menu {
     display: inline-block;
     cursor: pointer;
-    margin-top:100px;
-    margin-left: 100px;
+    margin-top: 20%;
+    margin-left: 130%;
 }
 
 .barra1, .barra2, .barra3 {
@@ -300,6 +297,10 @@ body {
     background-color: #EBDEDE;
     margin: 6px 0;
     transition: 0.4s;
+}
+
+.menu:hover {
+    color: #CF2B42;
 }
 
 .change .barra1 {
