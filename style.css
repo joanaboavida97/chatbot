@@ -30,7 +30,7 @@ body {
     color: white;
     font-family: 'Karla', sans-serif;
     font-weight: 700;
-    font-size: 25pt;
+    font-size: 23pt;
     line-height: 130%;
 }
 
@@ -42,7 +42,7 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 42pt;
+    font-size: 32pt;
     line-height: 120%;
     opacity: 0.3;
 }
@@ -69,16 +69,26 @@ body {
 /* BOTÕES */
 .plus-botao {
     cursor: pointer;
-    font-size: 30pt;
-    color: #EBDEDE;
+    font-size: 20pt;
+    color: #CF2B42;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    border: 3px solid #CF2B42;
+    padding: 10px;
+    width: 200px;
 }
 
 /* -------------------------------------------------
 /* COLUNAS */
 
-.left-column, .right-column {
+.left-column {
+    float: left;
+    width: 15%;
+}
+
+.right-column {
     float: left;
     width: 30%;
 }
@@ -86,7 +96,7 @@ body {
 .center-column {
     float: left;
     width: 40%;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .row:after { /* remove floats depois das colunas */
@@ -99,11 +109,11 @@ body {
 /* RETANGULOS VERMELHOS */
 
 .pergunta1, .pergunta2 {
-    width: 73px;
+    width: 5.1%;
     height: 100%;
     background: #CF2B42;
-    -webkit-transition: width 6s; 
-    animation: width 5s; 
+    -webkit-transition: width 3s; 
+    transition: width 5s; 
 }
 
 .pergunta1:hover {
@@ -112,136 +122,202 @@ body {
 }
 
 .pergunta2:hover {
-    width: 85%;
+    width: 85.1%;
     cursor: pointer;
     display: block;
 }
 
-.hover-image:hover {
-    display: hidden;
-}
 
 /* -------------------------------------------------
 /* GRELHA DE PERCENTAGEM */
 .ruler {
-    background-color: #0E1528;
+    background-color: transparent;
     position: relative;
     width: 100vw;
-    height: 20px;
-   }
-   .ruler .cm,
-   .ruler .mm {
+    height: 20px;    
+}
+
+.ruler .cm, .ruler .mm {
     position: absolute;
-    border-left: 1px solid white;
+    border-left: 1px solid #0E1528;
     height: 20px;
     width: 10%;
-   }
-   .ruler .cm:after {
+}
+
+.ruler .cm:after {
     position: absolute;
     bottom: -15px;
     font-family: 'Karla', sans-serif;
-    font-size: 9pt;
-    color: white;
-   }
-   .ruler .mm {
+    font-size: 10pt;
+    color: #0E1528;
+}
+   
+.ruler .mm {
     height: 0px;
-   }
-   .ruler .mm:nth-of-type(5) {
+}
+   
+.ruler .mm:nth-of-type(5) {
     height: 7px;
-   }
-   .ruler .cm:nth-of-type(1) {
+    color: #CF2B42;
+}
+   
+.ruler .cm:nth-of-type(1) {
     left: 0%;
-   }
-   .ruler .cm:nth-of-type(1):after {
+}
+   
+.ruler .cm:nth-of-type(1):after {
     content: "0%";
-   }
-   .ruler .cm:nth-of-type(2) {
+}
+   
+.ruler .cm:nth-of-type(2) {
     left: 10%;
-   }
-   .ruler .cm:nth-of-type(2):after {
+}
+
+.ruler .cm:nth-of-type(2):after {
     content: "10%";
-   }
-   .ruler .cm:nth-of-type(3) {
+}
+   
+.ruler .cm:nth-of-type(3) {
     left: 20%;
-   }
-   .ruler .cm:nth-of-type(3):after {
+}
+   
+.ruler .cm:nth-of-type(3):after {
     content: "20%";
-   }
-   .ruler .cm:nth-of-type(4) {
+}
+   
+.ruler .cm:nth-of-type(4) {
     left: 30%;
-   }
-   .ruler .cm:nth-of-type(4):after {
+}
+
+.ruler .cm:nth-of-type(4):after {
     content: "30%";
-   }
-   .ruler .cm:nth-of-type(5) {
+}
+   
+.ruler .cm:nth-of-type(5) {
     left: 40%;
-   }
-   .ruler .cm:nth-of-type(5):after {
+}
+
+.ruler .cm:nth-of-type(5):after {
     content: "40%";
-   }
-   .ruler .cm:nth-of-type(6) {
+}
+
+.ruler .cm:nth-of-type(6) {
     left: 50%;
-   }
-   .ruler .cm:nth-of-type(6):after {
+}
+
+.ruler .cm:nth-of-type(6):after {
     content: "50%";
-   }
-   .ruler .cm:nth-of-type(7) {
+}
+
+.ruler .cm:nth-of-type(7) {
     left: 60%;
-   }
-   .ruler .cm:nth-of-type(7):after {
+}
+
+.ruler .cm:nth-of-type(7):after {
     content: "60%";
-   }
-   .ruler .cm:nth-of-type(8) {
+}
+   
+.ruler .cm:nth-of-type(8) {
     left: 70%;
-   }
-   .ruler .cm:nth-of-type(8):after {
+}
+   
+.ruler .cm:nth-of-type(8):after {
     content: "70%";
-   }
-   .ruler .cm:nth-of-type(9) {
+}
+   
+.ruler .cm:nth-of-type(9) {
     left: 80%;
-   }
-   .ruler .cm:nth-of-type(9):after {
+}
+   
+.ruler .cm:nth-of-type(9):after {
     content: "80%";
-   }
-   .ruler .cm:nth-of-type(10) {
+}
+   
+.ruler .cm:nth-of-type(10) {
     left: 90%;
-   }
-   .ruler .cm:nth-of-type(10):after {
+}
+
+.ruler .cm:nth-of-type(10):after {
     content: "90%";
-   }
-   .ruler .cm:nth-of-type(11) {
+}
+
+.ruler .cm:nth-of-type(11) {
     left: 100%;
-   }
-   .ruler .cm:nth-of-type(11):after {
+}
+
+.ruler .cm:nth-of-type(11):after {
     content: "100%";
-   }
-   .ruler .mm:nth-of-type(1) {
+}
+
+.ruler .mm:nth-of-type(1) {
     left: 10%;
-   }
-   .ruler .mm:nth-of-type(2) {
+}
+
+.ruler .mm:nth-of-type(2) {
     left: 20%;
-   }
-   .ruler .mm:nth-of-type(3) {
+}
+
+.ruler .mm:nth-of-type(3) {
     left: 30%;
-   }
-   .ruler .mm:nth-of-type(4) {
+}
+   
+.ruler .mm:nth-of-type(4) {
     left: 40%;
-   }
-   .ruler .mm:nth-of-type(5) {
+}
+   
+.ruler .mm:nth-of-type(5) {
     left: 50%;
-   }
-   .ruler .mm:nth-of-type(6) {
+}
+
+.ruler .mm:nth-of-type(6) {
     left: 60%;
-   }
-   .ruler .mm:nth-of-type(7) {
+}
+
+.ruler .mm:nth-of-type(7) {
     left: 70%;
-   }
-   .ruler .mm:nth-of-type(8) {
+}
+
+.ruler .mm:nth-of-type(8) {
     left: 80%;
-   }
-   .ruler .mm:nth-of-type(9) {
+}
+
+.ruler .mm:nth-of-type(9) {
     left: 90%;
-   }
+}
+
+/* -------------------------------------------------
+/* MENU */
+.menu {
+    display: inline-block;
+    cursor: pointer;
+    margin-top:100px;
+    margin-left: 100px;
+}
+
+.barra1, .barra2, .barra3 {
+    width: 35px;
+    height: 5px;
+    background-color: #EBDEDE;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .barra1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .barra2 {
+    opacity: 0;
+}
+
+.change .barra3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* -------------------------------------------------
+
 
 
 
