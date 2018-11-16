@@ -23,6 +23,11 @@ body {
     background-color: #31B18D;
 }
 
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 /* -------------------------------------------------
 /* TEXTOS */
 
@@ -30,8 +35,24 @@ body {
     color: white;
     font-family: 'Karla', sans-serif;
     font-weight: 700;
-    font-size: 23pt;
+    font-size: 33pt;
     line-height: 130%;
+    text-decoration: none;
+}
+
+.paragraph-menu {
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 40pt;
+    line-height: 210%;
+    text-decoration: none;
+}
+
+.paragraph-menu:hover {
+    color: #CF2B42;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .h1 {
@@ -102,6 +123,12 @@ body {
     clear: both;
 }
 
+.menu-column {
+    float:left;
+    width: 50%;
+    margin-top: 10%;
+}
+
 /* -------------------------------------------------
 /* RETANGULOS VERMELHOS */
 
@@ -122,6 +149,42 @@ body {
     width: 85.1%;
     cursor: pointer;
     display: block;
+}
+
+
+/* -------------------------------------------------
+/* MENU */
+.menu {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20%;
+    margin-left: 60%;
+}
+
+.barra1, .barra2, .barra3 {
+    width: 35px;
+    height: 5px;
+    background-color: #EBDEDE;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu:hover {
+    color: #CF2B42;
+}
+
+.change .barra1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .barra2 {
+    opacity: 0;
+}
+
+.change .barra3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 
@@ -160,10 +223,6 @@ body {
    
 .ruler .cm:nth-of-type(1) {
     left: 0%;
-}
-   
-.ruler .cm:nth-of-type(1):after {
-    content: "0%";
 }
    
 .ruler .cm:nth-of-type(2) {
@@ -282,40 +341,6 @@ body {
     left: 90%;
 }
 
-/* -------------------------------------------------
-/* MENU */
-.menu {
-    display: inline-block;
-    cursor: pointer;
-    margin-top: 20%;
-    margin-left: 130%;
-}
-
-.barra1, .barra2, .barra3 {
-    width: 35px;
-    height: 5px;
-    background-color: #EBDEDE;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.menu:hover {
-    color: #CF2B42;
-}
-
-.change .barra1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .barra2 {
-    opacity: 0;
-}
-
-.change .barra3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
 
 /* -------------------------------------------------
 
