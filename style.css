@@ -91,7 +91,7 @@ a, a:visited, a:hover, a:active {
 .plus-botao {
     cursor: pointer;
     font-size: 20pt;
-    color: #CF2B42;
+    color: #EBDEDE;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-align: center;
@@ -132,7 +132,7 @@ a, a:visited, a:hover, a:active {
 /* -------------------------------------------------
 /* RETANGULOS VERMELHOS */
 
-.pergunta1, .pergunta2 {
+.rect-index {
     width: 5.1%;
     height: 100%;
     background: #CF2B42;
@@ -140,12 +140,7 @@ a, a:visited, a:hover, a:active {
     transition: width 3s; 
 }
 
-.pergunta1:hover {
-    width: 1400px;
-    cursor: pointer;
-}
-
-.pergunta2:hover {
+.rect-index:hover {
     width: 85.1%;
     cursor: pointer;
     display: block;
@@ -154,11 +149,11 @@ a, a:visited, a:hover, a:active {
 
 /* -------------------------------------------------
 /* MENU */
-.menu {
+.menu-barras {
     display: inline-block;
     cursor: pointer;
     margin-top: 20%;
-    margin-left: 60%;
+    margin-left: 130%;
 }
 
 .barra1, .barra2, .barra3 {
@@ -169,23 +164,11 @@ a, a:visited, a:hover, a:active {
     transition: 0.4s;
 }
 
-.menu:hover {
-    color: #CF2B42;
+.menu-cruz {
+
 }
 
-.change .barra1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
 
-.change .barra2 {
-    opacity: 0;
-}
-
-.change .barra3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
 
 
 /* -------------------------------------------------
@@ -340,7 +323,6 @@ a, a:visited, a:hover, a:active {
 .ruler .mm:nth-of-type(9) {
     left: 90%;
 }
-
 
 /* -------------------------------------------------
 
