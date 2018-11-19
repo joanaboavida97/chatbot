@@ -15,9 +15,9 @@
     margin: 0 0 0 0;
 }
 
-html {
+/*html {
     width: 100vw;
-}
+}*/
 
 body {
     background-color: #31B18D;
@@ -27,6 +27,10 @@ a, a:visited, a:hover, a:active {
     color: inherit;
     text-decoration: inherit;
 }
+
+/*.row {
+    width: 100vw;
+}*/
 
 /* -------------------------------------------------
 /* TEXTOS */
@@ -157,6 +161,7 @@ a, a:visited, a:hover, a:active {
     margin-top: 10%;
 }
 
+
 /* -------------------------------------------------
 /* RETANGULOS VERMELHOS */
 
@@ -186,9 +191,9 @@ a, a:visited, a:hover, a:active {
     display: block;
 }
 
-.rect-fixed {
+.rect-fixed { /*rect dos títulos dos ecrãs*/
     width: 5.1%;
-    height: 100%;
+    height: 110%;
     background: #CF2B42;
 }
 
