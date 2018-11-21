@@ -7,42 +7,83 @@
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800,900" rel="stylesheet">
     </head>
-    <body style="background-color: #0E1528">
+    <body style="background-color: #31B18D">
         <div class="row">
-            <div class="left-column" style="color: #CF2B42">
-                <p class="h1" style="margin-bottom: 7%">COMO USAR O BOT</p>
+            <div class="left-column">
+                <p class="h1" style="margin-bottom: 7%;">COMO USAR O BOT</p>
             </div>
             <div class="text-column">
-                    <p class="texto">Este chatbot é uma oportunidade para ficares a saber qual o papel da <b>Provedoria da Universidade de Coimbra</b> para com os estudantes universitários da UC.</p>
+                    <p class="texto">Este é chatbot uma oportunidade para ficares a saber qual o papel da <b>Provedoria da Universidade de Coimbra</b> para com os estudantes universitários da UC.</p>
                     <br>
                     <br>
                     <br>
-                    <p class="h3" style="margin-bottom: 2%">1. Faz perguntas ao Bot</p>
+                    <!--
+                    <p class="h3" style="margin-bottom: 2%; color: #CF2B42;">1. Faz perguntas ao Bot</p>
                     <p class="texto">Poderás fazer perguntas específicas sobre algum problema que te esteja a afetar, o <b>ProvedorBot</b> ajuda-te no que deves fazer!</p>
                     <br>
                     <br>
                     <br>
-                    <p class="h3" style="margin-bottom: 2%">2. Responde a perguntas do Bot</p>
+                    <p class="h3" style="margin-bottom: 2%; color: #CF2B42;">2. Responde a perguntas do Bot</p>
                     <p class="texto">Terás que responder a perguntas do Bot. Isto para te ajudar a encontrar uma resposta para o teu caso ou simplesmente para perceber o que sabes sobre o <b>Provedor do Estudante.</b></p>
                     <br>
                     <br>
                     <br>
                     <br>
+                    -->
+                    <button class="accordion">+ FAZ PERGUNTAS AO BOT</button>
+                    <div class="panel">
+                    <p class="texto">Poderás fazer perguntas específicas sobre algum problema que te esteja a afetar, o <b>ProvedorBot</b> ajuda-te no que deves fazer!</p>
+                    </div>
+                    <br>
+                    <button class="accordion">+ RESPONDE AO BOT</button>
+                    <div class="panel">
+                    <p class="texto">O propósito passa por combater o desconhecimento sobre o Provedor do Estudante, bem como ajudar os estudantes nos seus problemas através da interação com o Bot.</p>
+                    </div>
                     <p class="texto">Queres abrir o Bot numa nova tab? <b style="color: #CF2B42"><a target="_blank" href="https://snatchbot.me/webchat/?botID=35201&appID=n5yQdlWPM7SzdpjtBXY8">Clica aqui.</b></a></p>
             </div>
             <div class="right-column">
-                    <div class="menu-barras" onclick="myFunction(this)">
-                        <div class="barra1"></div>
-                        <div class="barra2"></div>
-                        <div class="barra3"></div>
-                      </div>
-            </div> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <span style="font-size:45px; cursor:pointer; margin-left: 14%; color: #0E1528;" onclick="abrirNav()">&#9776;</span>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="fecharNav()">&times;</a>
+                    <a href="index.html">HOME</a>
+                    <a href="sobre.html">SOBRE</a>
+                    <a href="comousar.html">COMO USAR O BOT</a>
+                    <a href="novidades.html">NOVIDADES</a>
+                </div>
+            </div>
             <div class="rect-fixed"></div>
             <link href="https://snatchbot.me/sdk/webchat.css" rel="stylesheet" type="text/css"><script src="https://snatchbot.me/sdk/webchat.min.js"></script><script> Init('?botID=35201&appID=webchat', 600, 600, 'https://dvgpba5hywmpo.cloudfront.net/media/image/JrO8bhK2exAQtoPyhr4H0cLCr', 'bubble', '#0E1528', 57, 52, 36.4, '', '1', '#FFFFFF', 0); /* for authentication of its users, you can define your userID (add &userID={login}) */ </script>
+
+            <!--Funçao para abrir menu-->
             <script>
-                function myFunction(x) {
-                    window.open("menu-aberto.html", "_self");
+                function abrirNav() {
+                    document.getElementById("mySidenav").style.width = "100%";
+                }
+        
+                function fecharNav() {
+                    document.getElementById("mySidenav").style.width = "0";
                 }
             </script>
+            <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+                    </script>
     </body>
 </html>
