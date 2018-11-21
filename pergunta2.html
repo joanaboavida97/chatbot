@@ -146,11 +146,19 @@
 
             <!--COLUNA DIREITA-->
             <div class="right-column">
-                <div class="menu-barras" onclick="myFunction(this)">
-                    <div class="barra1"></div>
-                    <div class="barra2"></div>
-                    <div class="barra3"></div>
-                  </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span style="font-size:45px; cursor:pointer; margin-left: 132%;" onclick="abrirNav()">&#9776;</span>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="fecharNav()">&times;</a>
+                    <a href="index.html">HOME</a>
+                    <a href="sobre.html">SOBRE</a>
+                    <a href="comousar.html">COMO USAR O BOT</a>
+                    <a href="novidades.html">NOVIDADES</a>
+                </div>
             </div>
         </div>
 
@@ -180,6 +188,17 @@
                 
             function closeNav() {
                 document.getElementById("myPercentage").style.width = "0";
+            }
+        </script>
+
+        <!--Funçao para abrir menu-->
+        <script>
+            function abrirNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+        
+            function fecharNav() {
+                document.getElementById("mySidenav").style.width = "0";
             }
         </script>
     </body>
