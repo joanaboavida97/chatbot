@@ -7,54 +7,70 @@
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800,900" rel="stylesheet">
     </head>
-    <body style="background-color: #0E1528">
+    <body style="background-color: #EBDEDE">
         <div class="row">
-            <div class="left-column" style="color: #CF2B42">
-                <p class="h1" style="margin-bottom: 7%">NOVIDADES</p>
+            <div class="left-column">
+                <p class="h1" style="margin-bottom: 7%;">NOVIDADES</p>
             </div>
             <div class="text-column">
                 <p class="texto">Aqui poderás saber as últimas novidades sobre a Provedoria e o comparecimento da Provedora do Estudante em diversos eventos para ficares a par de tudo!</p>
                 <br>
                 <br>
                 <br>
-                <p class="h3" style="margin-bottom: 2%">1. Fóruns / Jornadas Pedagógicas</p>
+                <p class="h3" style="margin-bottom: 2%; color: #CF2B42;">1. Fóruns / Jornadas Pedagógicas</p>
                 <br>
                 <div class="border-rect">
-                    <p class="h3" style="color: white; margin-top: 15px; margin-left: 20px;">Engenharia Mecânica</p>
-                    <p class="texto" style="color: white; margin-top: 10px; margin-left: 20px;">29.09.2018 — 14h30</p>
+                    <p class="h4" style="margin-top: 15px; margin-left: 20px;">Engenharia Mecânica</p>
+                    <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">29.09.2018 — 14h30</p>
                 </div>
                     <br>
                 <div class="border-rect">
-                    <p class="h3" style="color: white; margin-top: 15px; margin-left: 20px;">Design e Multimédia</p>
-                    <p class="texto" style="color: white; margin-top: 10px; margin-left: 20px;">04.10.2018 — 14h</p>
+                    <p class="h4" style="margin-top: 15px; margin-left: 20px;">Design e Multimédia</p>
+                    <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">04.10.2018 — 14h</p>
                 </div>
                 <br>
                 <br>
-                <p class="h3" style="margin-bottom: 2%">2. Outros Eventos</p>
+                <br>
+                <p class="h3" style="margin-bottom: 2%; color: #CF2B42;">2. Outros Eventos</p>
                 <br>
                 <div class="border-rect">
-                    <p class="h3" style="color: white; margin-top: 15px; margin-left: 20px;">10 ANOS - Provedoria da UC</p>
-                    <p class="texto" style="color: white; margin-top: 10px; margin-left: 20px;">29.09.2019 — 14h30 @ Reitoria da UC</p>
+                    <p class="h4" style="margin-top: 15px; margin-left: 20px;">10 ANOS - Provedoria da UC</p>
+                    <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">29.09.2019 — 14h30 @ Reitoria da UC</p>
                 </div>
                 <br>
                 <div class="border-rect">
-                        <p class="h3" style="color: white; margin-top: 15px; margin-left: 20px;">Formação com Alunos Estrangeiros</p>
-                        <p class="texto" style="color: white; margin-top: 10px; margin-left: 20px;">29.09.2019 — 14h</p>
+                        <p class="h4" style="margin-top: 15px; margin-left: 20px;">Palestra para Alunos Estrangeiros</p>
+                        <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">29.09.2019 — 14h @ Provedoria da UC</p>
                 </div>
+                <br>
                 <br>
             </div>
             <div class="right-column">
-                    <div class="menu-barras" onclick="myFunction(this)">
-                        <div class="barra1"></div>
-                        <div class="barra2"></div>
-                        <div class="barra3"></div>
-                      </div>
-            </div> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <span style="font-size:45px; cursor:pointer; margin-left: 148%; color: #0E1528;" onclick="abrirNav()">&#9776;</span>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="fecharNav()">&times;</a>
+                    <a href="index.html">HOME</a>
+                    <a href="sobre.html">SOBRE</a>
+                    <a href="comousar.html">COMO USAR O BOT</a>
+                    <a href="novidades.html">NOVIDADES</a>
+                </div>
+            </div>
             <div class="rect-fixed"></div>
             <link href="https://snatchbot.me/sdk/webchat.css" rel="stylesheet" type="text/css"><script src="https://snatchbot.me/sdk/webchat.min.js"></script><script> Init('?botID=35201&appID=webchat', 600, 600, 'https://dvgpba5hywmpo.cloudfront.net/media/image/JrO8bhK2exAQtoPyhr4H0cLCr', 'bubble', '#0E1528', 57, 52, 36.4, '', '1', '#FFFFFF', 0); /* for authentication of its users, you can define your userID (add &userID={login}) */ </script>
+            
+            <!--Funçao para abrir menu-->
             <script>
-                function myFunction(x) {
-                    window.open("menu-aberto.html", "_self");
+                function abrirNav() {
+                    document.getElementById("mySidenav").style.width = "100%";
+                }
+            
+                function fecharNav() {
+                    document.getElementById("mySidenav").style.width = "0";
                 }
             </script>
     </body>
