@@ -7,42 +7,74 @@
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800,900" rel="stylesheet">
     </head>
-    <body style="background-color: #0E1528">
+    <body style="background-color: #31B18D">
         <div class="row">
-            <div class="left-column" style="color: #CF2B42">
-                <p class="h1" style="margin-bottom: 7%">SOBRE</p>
+            <div class="left-column">
+                <p class="h1" style="margin-bottom: 7%;">SOBRE</p>
             </div>
-            
             <div class="text-column">
-                <p>.</p>
+                    <p class="texto">Nesta página poderás descobrir mais pormenores sobre esta plataforma, sobre o Bot e sobre a Provedoria do Estudante.<br><br>Clica nas seguintes alternativas para ficares a saber mais:</p><br>
+                    <button class="accordion">+ Origem</button>
+                    <div class="panel">
+                      <p class="texto">Este projeto foi desenvolvido no âmbito da disciplina de Oficina de Design de Comunicação do Mestrado em Design e Multimédia.</p>
+                    </div>
+                    <br>
+                    <button class="accordion">+ Propósito</button>
+                    <div class="panel">
+                      <p class="texto">O propósito passa por combater o desconhecimento sobre o Provedor do Estudante, bem como ajudar os estudantes nos seus problemas através da interação com o Bot.</p>
+                    </div>
+                    <br>
+                    <button class="accordion">+ Provedor do Estudante — Quem é?</button>
+                    <div class="panel">
+                      <p class="texto">Ao Provedor do Estudante cabe defender e promover os direitos e interesses legítimos dos estudantes da UC. É um aliado dos alunos para garantir um serviço público eficiente, defendendo os seus direitos.</p>
+                    </div>
+                <br>
+                <br>
             </div>
-            <!--
-                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <br>
-                    <br>
-                    <br>
-                    <p class="h3" style="margin-bottom: 2%">1. Lorem ipsum dolor sit amet</p>
-                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <br>
-                    <br>
-                    <br>
-                    <p class="h3" style="margin-bottom: 2%">2. Lorem ipsum dolor sit amet</p>
-                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            
-            -->
             <div class="right-column">
-                    <div class="menu-barras" onclick="myFunction(this)">
-                        <div class="barra1"></div>
-                        <div class="barra2"></div>
-                        <div class="barra3"></div>
-                      </div>
-            </div> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <span style="font-size:45px; cursor:pointer; margin-left: 148%; color: #0E1528;" onclick="abrirNav()">&#9776;</span>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="fecharNav()">&times;</a>
+                    <a href="index.html">HOME</a>
+                    <a href="sobre.html">SOBRE</a>
+                    <a href="comousar.html">COMO USAR O BOT</a>
+                    <a href="novidades.html">NOVIDADES</a>
+                </div>
+            </div>
             <div class="rect-fixed"></div>
             <link href="https://snatchbot.me/sdk/webchat.css" rel="stylesheet" type="text/css"><script src="https://snatchbot.me/sdk/webchat.min.js"></script><script> Init('?botID=35201&appID=webchat', 600, 600, 'https://dvgpba5hywmpo.cloudfront.net/media/image/JrO8bhK2exAQtoPyhr4H0cLCr', 'bubble', '#0E1528', 57, 52, 36.4, '', '1', '#FFFFFF', 0); /* for authentication of its users, you can define your userID (add &userID={login}) */ </script>
+            
+            <!--Funçao para abrir menu-->
             <script>
-                function myFunction(x) {
-                    window.open("menu-aberto.html", "_self");
+                function abrirNav() {
+                    document.getElementById("mySidenav").style.width = "100%";
+                }
+            
+                function fecharNav() {
+                    document.getElementById("mySidenav").style.width = "0";
                 }
             </script>
+
+            <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+                    </script>
     </body>
 </html>
