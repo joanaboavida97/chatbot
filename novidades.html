@@ -7,41 +7,41 @@
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800,900" rel="stylesheet">
     </head>
-    <body style="background-color: #EBDEDE">
+    <body style="background-color: #31B18D">
         <div class="row">
             <div class="left-column">
                 <p class="h1" style="margin-bottom: 7%;">NOVIDADES</p>
             </div>
             <div class="text-column">
-                <p class="texto">Aqui poderás saber as últimas novidades sobre a Provedoria e o comparecimento da Provedora do Estudante em diversos eventos para ficares a par de tudo!</p>
-                <br>
-                <br>
-                <br>
-                <p class="h3" style="margin-bottom: 2%; color: #CF2B42;">1. Fóruns / Jornadas Pedagógicas</p>
-                <br>
-                <div class="border-rect">
-                    <p class="h4" style="margin-top: 15px; margin-left: 20px;">Engenharia Mecânica</p>
-                    <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">29.09.2018 — 14h30</p>
-                </div>
+                    <p class="texto">Aqui poderás saber as últimas novidades sobre a Provedoria e o comparecimento da Provedora do Estudante em diversos eventos para ficares a par de tudo!<br><br></p>
                     <br>
-                <div class="border-rect">
-                    <p class="h4" style="margin-top: 15px; margin-left: 20px;">Design e Multimédia</p>
-                    <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">04.10.2018 — 14h</p>
-                </div>
-                <br>
-                <br>
-                <br>
-                <p class="h3" style="margin-bottom: 2%; color: #CF2B42;">2. Outros Eventos</p>
-                <br>
-                <div class="border-rect">
-                    <p class="h4" style="margin-top: 15px; margin-left: 20px;">10 ANOS - Provedoria da UC</p>
-                    <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">29.09.2019 — 14h30 @ Reitoria da UC</p>
-                </div>
-                <br>
-                <div class="border-rect">
-                        <p class="h4" style="margin-top: 15px; margin-left: 20px;">Palestra para Alunos Estrangeiros</p>
-                        <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">29.09.2019 — 14h @ Provedoria da UC</p>
-                </div>
+                    <button class="accordion">> JORNADAS PEDAGÓGICAS</button>
+                    <div class="panel">
+                        <div class="border-rect">
+                            <p class="h4" style="margin-top: 15px; margin-left: 20px;">Engenharia Mecânica</p>
+                            <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">29.09.2018 — 14h30</p>
+                        </div>
+                            <br>
+                        <div class="border-rect">
+                            <p class="h4" style="margin-top: 15px; margin-left: 20px;">Design e Multimédia</p>
+                            <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">04.10.2018 — 14h</p>
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                    <button class="accordion">> OUTROS EVENTOS</button>
+                    <div class="panel">
+                        <div class="border-rect">
+                            <p class="h4" style="margin-top: 15px; margin-left: 20px;">10 ANOS - Provedoria da UC</p>
+                            <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">29.09.2019 — 14h30 @ Reitoria da UC</p>
+                        </div>
+                        <br>
+                        <div class="border-rect">
+                            <p class="h4" style="margin-top: 15px; margin-left: 20px;">Palestra para Alunos Estrangeiros</p>
+                            <p class="texto" style="color: #0E1528; margin-top: 10px; margin-left: 20px;">29.09.2019 — 14h @ Provedoria da UC</p>
+                        </div>
+                    </div>
+                    <br>
                 <br>
                 <br>
             </div>
@@ -56,11 +56,11 @@
                     <a href="javascript:void(0)" class="closebtn" onclick="fecharNav()">&times;</a>
                     <a href="index.html">HOME</a>
                     <a href="sobre.html">SOBRE</a>
-                    <a href="comousar.html">COMO USAR O BOT</a>
+                    <a href="comousar.html">COMO USAR</a>
                     <a href="novidades.html">NOVIDADES</a>
                 </div>
             </div>
-            <div class="rect-fixed"></div>
+            
             <link href="https://snatchbot.me/sdk/webchat.css" rel="stylesheet" type="text/css"><script src="https://snatchbot.me/sdk/webchat.min.js"></script><script> Init('?botID=35201&appID=webchat', 600, 600, 'https://dvgpba5hywmpo.cloudfront.net/media/image/JrO8bhK2exAQtoPyhr4H0cLCr', 'bubble', '#0E1528', 57, 52, 36.4, '', '1', '#FFFFFF', 0); /* for authentication of its users, you can define your userID (add &userID={login}) */ </script>
             
             <!--Funçao para abrir menu-->
@@ -73,5 +73,22 @@
                     document.getElementById("mySidenav").style.width = "0";
                 }
             </script>
+
+            <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+                    </script>
     </body>
 </html>
