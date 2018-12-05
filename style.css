@@ -76,6 +76,7 @@ a:hover {
     font-size: 32pt;
     line-height: 120%;
     opacity: 0.3;
+    letter-spacing: 3px;
 }
 
 .h3 { /*Tópicos*/
